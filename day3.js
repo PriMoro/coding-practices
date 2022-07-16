@@ -1,9 +1,15 @@
 function reverse(s) {
-  if (typeof s === "string") {
-    console.log(s.split("").reverse().join(""));
-  } else {
-    console.log(s.toString().split("").reverse().join(""));
+  try {
+    s.split("").reverse().join("");
+    console.log(s);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    // if (error) {
+    //   console.log(error);
+    // }
+    console.log(s);
   }
 }
 
-reverse(1234);
+reverse("1234");
