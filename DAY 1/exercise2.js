@@ -1,5 +1,8 @@
+// EXERCISE 2
 function factorial(n) {
   if (n === 0 || n === 1) {
+    //Facorial 0! = 1 and 1! = 1
+
     return 1;
   }
   return n * factorial(n - 1);
