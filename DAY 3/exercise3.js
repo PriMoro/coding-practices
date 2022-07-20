@@ -1,3 +1,4 @@
+//EXERCISE 1
 function reverse(s) {
   try {
     s = s.split("").reverse().join("");
