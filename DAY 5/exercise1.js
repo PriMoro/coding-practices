@@ -1,3 +1,5 @@
+//EXERCISE 1
+
 function modifyArray(nums) {
   let count = 0;
   while (count < nums.length) {
@@ -8,4 +10,4 @@ function modifyArray(nums) {
   }
   return nums;
 }
-console.log(modifyArray([1, 2, 3, 4, 5]));
+console.log(modifyArray([1, 2, 3, 4, 5])); //[ 3, 4, 9, 8, 15 ]
