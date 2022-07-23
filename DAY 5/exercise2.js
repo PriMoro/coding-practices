@@ -19,12 +19,27 @@ class Rectangle {
     this.w = w;
     this.h = h;
   }
-  get area() {
-    return this.w * this.h;
-  }
 }
+Rectangle.prototype.area = function () {
+  return this.w * this.h;
+};
 class Square extends Rectangle {
   constructor(props) {
     super(props, props);
   }
 }
+
+// class Rectangle {
+//   constructor(w, h) {
+//     this.w = w;
+//     this.h = h;
+//   }
+//   get area() {
+//     return this.w * this.h;
+//   }
+// }
+// class Square extends Rectangle {
+//   constructor(props) {
+//     super(props, props);
+//   }
+// }
