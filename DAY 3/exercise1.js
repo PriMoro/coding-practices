@@ -20,4 +20,8 @@ function isPositive(a) {
     }
   }
 }
-console.log(isPositive(0));
+console.log(isPositive(10)); // YES
+console.log(isPositive(5)); // YES
+console.log(isPositive(0)); // Zero Error
+console.log(isPositive(-20)); // Negative Error
+console.log(isPositive(-1)); // Negative Error
