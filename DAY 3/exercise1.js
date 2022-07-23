@@ -7,7 +7,11 @@
 
 function isPositive(a) {
   try {
-    return a && "YES";
+    if (a > 0) {
+      return "YES";
+    } else {
+      throw Error;
+    }
   } catch (error) {
     if (a === 0) {
       throw new Error("Zero Error");
@@ -16,4 +20,4 @@ function isPositive(a) {
     }
   }
 }
-isPositive(2);
+console.log(isPositive(0));
